@@ -1,1 +1,41 @@
 // Navigation Styles here
+.navbar {
+  .containerWidth();
+  height: 8rem;
+  .displayFlex(space-between, center); 
+  flex-wrap: wrap;
+  
+  ul {
+    .displayFlex(space-between, center);
+    width: 50%;
+
+    @media @phone {
+      width: 100%;
+      .displayFlex(center, center);
+    }
+    
+
+    li {
+      .displayFlex(space-around, baseline);
+      }
+
+    a {
+      flex-wrap: nowrap;
+      color: black;
+      font-size: 1.8rem;
+      text-decoration: none;
+      padding-right: 2rem;
+      padding-top: 0.8rem;
+    }
+  }
+
+  @media @phone {
+    flex-direction: column;
+    .displayFlex(center, center);
+
+    h1 {
+      width: 100%;
+      .displayFlex(center, center);
+    }
+  }
+}

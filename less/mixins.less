@@ -1,1 +1,13 @@
 // Mixins in here
+.displayFlex(@justify: center, @align: center) {
+  display: flex;
+
+  justify-content: @justify;
+  align-content: @align;
+}
+
+.containerWidth() {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
