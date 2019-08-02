@@ -1,1 +1,29 @@
 // Mixins in here
+.displayFlex(@justify: center, @align: center) {
+  display: flex;
+
+  justify-content: @justify;
+  align-content: @align;
+}
+
+.containerWidth() {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.phoneContainer(@max: 90%) {
+  max-width: @max;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btnStyle() {
+  color: @white;
+  background: @button-bg;
+  font-size: 2rem;
+  width: 82%;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 1rem 3rem;
+}

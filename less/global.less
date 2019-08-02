@@ -1,10 +1,10 @@
 * {
   box-sizing: border-box;
-}
+  }
 
 html {
   font-size: 62.5%;
-}
+  }
 
 html, body {
   font-family: 'Roboto', sans-serif;
@@ -39,8 +39,15 @@ img {
   height: auto;
 }
 
+.img-content-header {
+  .containerWidth();
+}
+
 .container {
-  max-width: 800px;
+  .containerWidth();
+}
+
+.line {
   width: 100%;
-  margin: 0 auto;
+  border-top: 2px dashed @silver;
 }
