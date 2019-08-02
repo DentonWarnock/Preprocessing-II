@@ -6,25 +6,25 @@
   flex-wrap: wrap;
   
   ul {
-    .displayFlex(space-between, center);
-    width: 50%;
-
+    .displayFlex(flex-end, center);
+    width: 45%;
+    
     @media @phone {
       width: 100%;
       .displayFlex(center, center);
     }
     
-
     li {
-      .displayFlex(space-around, baseline);
+      .displayFlex(flex-end, baseline);
       }
 
     a {
       flex-wrap: nowrap;
       color: black;
+      
       font-size: 1.8rem;
       text-decoration: none;
-      padding-right: 2rem;
+      padding-right: 3.3rem;
       padding-top: 0.8rem;
     }
   }
@@ -32,9 +32,10 @@
   @media @phone {
     flex-direction: column;
     .displayFlex(center, center);
+    flex-wrap: nowrap;
 
     h1 {
-      width: 100%;
+      .phoneContainer();
       .displayFlex(center, center);
     }
   }
